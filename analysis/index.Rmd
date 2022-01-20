@@ -28,8 +28,3 @@ Check out the sample analysis-
 
 ## Check out the published pages here:
 
- * [Dora](dora_file.html)
- * [Elliot](elliot_file.html)
- * [Jake](jake_file.html)
- * [Josh](josh_file.html)
- * [Layla](layla_file.html)
