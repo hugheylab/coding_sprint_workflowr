@@ -21,9 +21,8 @@ Check out the sample analysis-
 
 1. Please add your analyses to your corresponding `.Rmd` file in the analysis folder.
 2. Taking turns, pull from GitHub, keeping changes to your corresponding `.Rmd` file.
-3. Build your page with `wflow_build()`.
-4. Publish your page with `wflow_publish()`.
-5. Push your changes to GitHub.
+3. Push your changes to GitHub.
+4. If multiple people have added dependencies in the `DESCRIPTION` file, everyone should copy and paste one instance with all dependencies into their own copy before doing above steps!
 
 
 ## Check out the published pages here:
