@@ -9,7 +9,9 @@ editor_options:
 
 ## Introduction
 
-```{r}
+This is basic.
 
+```{r}
+print("Hello")
 ```
 
