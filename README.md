@@ -49,7 +49,14 @@ A [workflowr][] project.
 
 10. Navigate to your repository on GitHub’s website, then go to the “Settings” tab and select “Pages” in the side panel.
 11. Under “Source”, select `gh-pages` as the source branch, set the directory as `/docs` and click “Save”. This will publish and create the GitHub Pages site!
-12. Push to github and it will build and publish the site each time someone pushes, no longer necessary for users to build and push!
+12. Add your changes to a git commit, then commit using the following lines:
+
+        ```bash
+        git add -A
+        git commit -m "{REPLACE WITH YOUR COMMIT MESSAGE}"
+        ```
+
+13. Push to github and it will build and publish the site each time someone pushes, no longer necessary for users to build and push!
 
 ## Guide for running sprint
 
