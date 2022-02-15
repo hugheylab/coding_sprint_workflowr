@@ -1,3 +1,4 @@
+library('workflowr')
 # Edit below list of people in the lab to add analysis files and links!
 labNames = c('dora', 'elliot', 'jake', 'josh', 'layla', 'sample')
 # Reads index.Rmd to append links to

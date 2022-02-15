@@ -8,7 +8,10 @@ Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Imports:
+    cowplot,
     data.table,
+    doParallel,
+    foreach,
     ggplot2,
     workflowr
 Encoding: UTF-8
