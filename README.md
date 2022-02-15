@@ -32,31 +32,29 @@ A [workflowr][] project.
         workflowr::wflow_build()
         workflowr::wflow_publish(republish = TRUE)
         ```
-        
-    
     
 6. Add your analysis data into the `data` directory. To access this data, your filename (including the path) will be the following:
 
-        ```r
-        dataFilename = file.path('data', '{dataFilename}`)
-        ```
+    ```r
+    dataFilename = file.path('data', '{dataFilename}`)
+    ```
 
 7. Edit `analysis/sample_analysis.Rmd` script to contain your sample analysis.
 8. Add dependencies to the “Imports” section of the `DESCRIPTION` file.
 9. Place any necessary reusable functions/scripts into the `code` directory. To access these in an analysis script, source the script by dadding the following line to the top of your analysis:
 
-        ```r
-        source(file.path('code', '{scriptFilename}.r'))
-        ```
+    ```r
+    source(file.path('code', '{scriptFilename}.r'))
+    ```
 
 10. Navigate to your repository on GitHub’s website, then go to the “Settings” tab and select “Pages” in the side panel.
 11. Under “Source”, select `gh-pages` as the source branch, set the directory as `/docs` and click “Save”. This will publish and create the GitHub Pages site!
 12. Add your changes to a git commit, then commit using the following lines:
 
-        ```bash
-        git add -A
-        git commit -m "{REPLACE WITH YOUR COMMIT MESSAGE}"
-        ```
+    ```bash
+    git add -A
+    git commit -m "{REPLACE WITH YOUR COMMIT MESSAGE}"
+    ```
 
 13. Push to github and it will build and publish the site each time someone pushes, no longer necessary for users to build and push!
 
