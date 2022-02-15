@@ -18,6 +18,8 @@ A [workflowr][] project.
     ```
     
 4. Source the `analysis_setup.R` script - 
+    - Note that the `analysis_setup.R` script has a vector of the names of people in the lab on line 3.
+    - If there are changes to lab personnel, edit this line to only have names of active lab members before sourcing the script.
 
     ```r
     source(file.path('code', 'analysis_setup.R'))
