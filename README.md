@@ -11,13 +11,13 @@ A [workflowr][] project.
     2. Check the “Include all branches” box.
     3. Name your repository as follows: `coding_sprint_{YYYY}_{MM}` where `YYYY` and `MM` are the integer representations for year and month, respectively.
 2. Clone your newly created repository to your local machine.
-3. Install workflowr - 
+3. Install workflowr:
 
     ```r
     install.packages('workflowr')
     ```
     
-4. Source the `analysis_setup.R` script - 
+4. Source the `analysis_setup.R` script:
     - Note that the `analysis_setup.R` script has a vector of the names of people in the lab on line 3.
     - If there are changes to lab personnel, edit this line to only have names of active lab members before sourcing the script.
 
@@ -25,38 +25,33 @@ A [workflowr][] project.
     source(file.path('code', 'analysis_setup.R'))
     ```
     
-5. To update the docs folder and prepare the repository for automated site generation, run the following two commands in R:
-    - If you are not using RStudio or do not already have pandoc installed, you will need to install pandoc [here.](https://pandoc.org/installing.html)
+5. If you are not using RStudio or do not already have pandoc installed, you will need to install pandoc [here.](https://pandoc.org/installing.html)
+6. To update the docs folder and prepare the repository for automated site generation, run the following two commands in R:
     
-        ```r
-        workflowr::wflow_build()
-        workflowr::wflow_publish(republish = TRUE)
-        ```
+    ```r
+    workflowr::wflow_build()
+    workflowr::wflow_publish(republish = TRUE)
+    ```
     
-6. Add your analysis data into the `data` directory. To access this data, your filename (including the path) will be the following:
+7. Add your analysis data into the `data` directory.
+8. Edit `analysis/sample_analysis.Rmd` script to contain your sample analysis.
+9. Add dependencies to the “Imports” section of the `DESCRIPTION` file.
+10. Edit the `code/utils.R` script to set the `data` variable to your data. You will need to uncomment the second line and replace `<YOUR_DATA_FILENAME>` with the name of your data file. You can also place any reusable functions into the end of this script. Once you have done this, the data and functions defined can be made available by placing this line at the top of your analysis file:
 
     ```r
-    dataFilename = file.path('data', '{dataFilename}`)
+    source(file.path('code', 'utils.R'))
     ```
 
-7. Edit `analysis/sample_analysis.Rmd` script to contain your sample analysis.
-8. Add dependencies to the “Imports” section of the `DESCRIPTION` file.
-9. Place any necessary reusable functions/scripts into the `code` directory. To access these in an analysis script, source the script by dadding the following line to the top of your analysis:
-
-    ```r
-    source(file.path('code', '{scriptFilename}.r'))
-    ```
-
-10. Navigate to your repository on GitHub’s website, then go to the “Settings” tab and select “Pages” in the side panel.
-11. Under “Source”, select `gh-pages` as the source branch, set the directory as `/docs` and click “Save”. This will publish and create the GitHub Pages site!
-12. Add your changes to a git commit, then commit using the following lines:
+11. Navigate to your repository on GitHub’s website, then go to the “Settings” tab and select “Pages” in the side panel.
+12. Under “Source”, select `gh-pages` as the source branch, set the directory as `/docs` and click “Save”. This will publish and create the GitHub Pages site!
+13. Add your changes to a git commit, then commit using the following lines:
 
     ```bash
     git add -A
-    git commit -m "{REPLACE WITH YOUR COMMIT MESSAGE}"
+    git commit -m "<REPLACE WITH YOUR COMMIT MESSAGE>"
     ```
 
-13. Push to github and it will build and publish the site each time someone pushes, no longer necessary for users to build and push!
+14. Push to github and it will build and publish the site each time someone pushes, no longer necessary for users to build and push!
 
 ## Guide for running sprint
 

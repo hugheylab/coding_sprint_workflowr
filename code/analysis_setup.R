@@ -10,6 +10,6 @@ for (person in persons) {
     wflow_open(analysisFilename, change_wd = FALSE, edit_in_rstudio = FALSE)}
   # Appends to index.Rmd if not the sample
   if (person != 'sample') {
-    indexRmd = c(indexRmd,
-                 sprintf(' * [%s](%s_analysis.html)', person, person))}}
+    indexRmd = c(
+      indexRmd, sprintf(' * [%s](%s_analysis.html)', person, person))}}
 writeLines(indexRmd, 'analysis/index.Rmd')
