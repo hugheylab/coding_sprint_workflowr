@@ -44,14 +44,15 @@ A [workflowr][] project.
 
 11. Navigate to your repository on GitHub’s website, then go to the “Settings” tab and select “Pages” in the side panel.
 12. Under “Source”, select `gh-pages` as the source branch, set the directory as `/docs` and click “Save”. This will publish and create the GitHub Pages site!
-13. Add your changes to a git commit, then commit using the following lines:
+13. While you are still in "Settings", click on "Collaborators and Teams", click  "Add Team", search for and select "hugheylab/hugheylab-all", and add "Write" access.
+14. Add your changes to a git commit, then commit using the following lines:
 
     ```bash
     git add -A
     git commit -m "<REPLACE WITH YOUR COMMIT MESSAGE>"
     ```
 
-14. Push to github and it will build and publish the site each time someone pushes, no longer necessary for users to build and push!
+15. Push to github and it will build and publish the site each time someone pushes, no longer necessary for users to build and push!
 
 ## Guide for running sprint
 

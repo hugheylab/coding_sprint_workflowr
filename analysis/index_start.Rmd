@@ -1,0 +1,29 @@
+---
+title: "Home"
+site: workflowr::wflow_site
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+#### Website to showcase Coding Sprint from 2021-12-16
+
+Check out the sample analysis-
+
+* [Sample Analysis](sample_analysis.html)
+
+
+## Individual Pages: 
+
+### Steps:
+
+1. Please add your analyses to your corresponding `.Rmd` file in the analysis folder.
+2. Taking turns, pull from GitHub, keeping changes to your corresponding `.Rmd` file.
+3. Push your changes to GitHub.
+4. If multiple people have added dependencies in the `DESCRIPTION` file, everyone should copy and paste one instance with all dependencies into their own copy before doing above steps!
+
+
+## Check out the published pages here:
+
